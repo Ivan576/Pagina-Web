@@ -70,7 +70,9 @@ body {
     color: black;
 }
 
-
+#videoStyle{
+    margin-left: -35px;
+}
 
 #contenidoBlog{
     float: left;
