@@ -196,3 +196,9 @@ body {
     text-align: justify;
 }
 
+#textoTuto{
+    padding: 0px;
+    text-align: justify;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
