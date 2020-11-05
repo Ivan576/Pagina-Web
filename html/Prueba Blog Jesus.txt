@@ -107,13 +107,53 @@
             </aside>
         </main>
         <footer id="pieBlog">
-            <header id="tituloPieBlog">
-                <h1>Contactanos</h1>
-            </header>
-            <section id="parrafoPieBlog">
-                <p>Twitter: <a href="https://twitter.com/CcRVyl">CcRVyl</a></p>
-                <p>Instagram: <a href="https://www.instagram.com/ccr_vyl/">ccr_vyl</a></p>
-            </section>
+        <header id="tituloPieBlog">
+            <h1>Contactanos</h1>
+        </header>
+        <section id="parrafoPieBlog">
+            <article>
+                <header>
+                    <h1>Vyl</h1>
+                </header>
+                <section>
+                    <img src="Images/vyl.jpg" alt="" id="img" />
+                    <p>Soy un estudiante de la carrera de Ingeniería en sistemas computacionales en el Instituto Tecnológico Superior del Sur de Guanajuato (ITSUR). Disfruto de liderar, desarrollar y probar proyectos de software.</p>
+                </section>
+                <footer>
+                    <p id="links">Twitter: <a href="https://twitter.com/CcRVyl">CcRVyl</a></p>
+                    <p id="links">Instagram: <a href="https://www.instagram.com/ccr_vyl/">ccr_vyl</a></p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1>Vyl</h1>
+                </header>
+                <section>
+                    <img src="Images/vyl.jpg" alt="" id="img" />
+                    <p>Soy un estudiante de la carrera de Ingeniería en sistemas computacionales en el Instituto Tecnológico Superior del Sur de Guanajuato (ITSUR). Disfruto de liderar, desarrollar y probar proyectos de software.</p>
+                </section>
+                <footer>
+                    <p id="links">Twitter: <a href="https://twitter.com/CcRVyl">CcRVyl</a></p>
+                    <p id="links">Instagram: <a href="https://www.instagram.com/ccr_vyl/">ccr_vyl</a></p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1>Vyl</h1>
+                </header>
+                <section>
+                    <img src="Images/vyl.jpg" alt="" id="img" />
+                    <p>Soy un estudiante de la carrera de Ingeniería en sistemas computacionales en el Instituto Tecnológico Superior del Sur de Guanajuato (ITSUR). Disfruto de liderar, desarrollar y probar proyectos de software.</p>
+                </section>
+                <footer>
+                    <p id="links">Twitter: <a href="https://twitter.com/CcRVyl">CcRVyl</a></p>
+                    <p id="links">Instagram: <a href="https://www.instagram.com/ccr_vyl/">ccr_vyl</a></p>
+                </footer>
+            </article>
+        </section>
+        <footer id="piePieBlog">
+            
         </footer>
+    </footer>
     </body>
 </html>

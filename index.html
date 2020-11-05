@@ -1,40 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web vlok</title>
-    <link rel="stylesheet" href="Style/estilos.css">
-</head>
-<body>
-    <header id="encabezadoBlog">
-        <h1 id="tituloBlog">
-            Art Attak
-        </h1>
-        <p id="subtituloBlog">
-            Aprende todo sobre programacion
-        </p>
-
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            El Zen y el Arte de Programar
+        </title>
+        <meta name="description" content="Blog introductorio al mundo de la programación">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style/estilos.css">
+        <script type="text/javascript" src="JS/actions.js"></script>
+    </head>
+    <body>
+        <header id="encabezadoBlog">
+            <h1 id="tituloBlog">
+                El Zen y el Arte de Programar.
+            </h1>
+            <p id="subtituloBlog">
+                Domina el camino de este arte.
+            </p>
+        </header>
         <nav id="menuBlog">
-            <a href="#">Inicio</a> <!-- 
-                Se mostrará la bienvenida al usuario (Introducción al blog).
-                Previsualización de cada sección con las últimas novedades.
-                Menú lateral con los más populares.
-                Pié de página con nuestros datos.
-            -->
-            <a href="#">Tutoriales</a><!--
-                Menú lateral con lenguajes de programación (Solo muestre tutoriales de ese lenguaje).
-                Muestre un listado con una previsualización de los tutoriales.
-                Pié de página con nuestros datos.
-            -->
-            <a href="#">Novedades</a> <!--
-                Muestre un listado con los artículos, notas y noticias más relevantes de programación e informática.
-            -->
-            <a href="#">Preguntas y Respuestas</a><!--
-                
-            -->     
+            <a href="#">Inicio</a>
+            <a href="#">Tutoriales</a>
+            <a href="#">Noticias</a>
+            <a href="#">Recursos</a>
+            <a href="#">Preguntas</a>
         </nav>
-    </header>
-    
-</body>
+        <main id="principalBlog">
+            <section id="contenidoBlog">
+                <section>
+                    <header id="tituloSeccionBlog">
+                        <h1 style="margin-bottom: 0%;">Tutoriales</h1>
+                        <h4 style="margin-top: 0%;">Aprende a programar.</h4>
+                    </header>
+                    <article id="articuloBlog">
+                        <h3>Aprende programación web desde cero.</h3>
+                        <h5>Vyl, Ago 7, 2020</h5>
+                        <img src="Images/html.jpg" alt="" id="img" />
+                        <p>Programación web.</p>
+                        <p>Curso gratuito de programación web. Conviertete en un experto de la programación web desde cero. El curso introductotio abarca desde la instalación de los recursos hasta el modelo de 3 capaz. Aprende sobre UX/UI, Front-end y Back-end.</p>
+                    </article>
+                </section>
+                <section>
+                    <header id="tituloSeccionBlog">
+                        <h1 style="margin-bottom: 0%;">Noticias</h1>
+                        <h4 style="margin-top: 0%;">Enterate de lo nuevo en programación.</h4>
+                    </header>
+                    <article id="articuloBlog">
+                        <h3>Beneficios de Java SE en medianas empresas.</h3>
+                        <h5>Java, Oct 1, 2020</h5>
+                        <img src="Images/java se.jpeg" alt="" id="img" />
+                        <p>Através de su protal de Twitter, Java publicó:</p>
+                        <p>"Un estudio reciente reveló los beneficios de Oracle #Java SE para empresas medianas, incluido un ahorro de costos promedio del 29%."</p>
+                    </article>
+                </section>
+                <section>
+                    <header id="tituloSeccionBlog">
+                        <h1 style="margin-bottom: 0%;">Dojo</h1>
+                        <h4 style="margin-top: 0%;">Practica en nuestra zona de entrenamiento.</h4>
+                    </header>
+                    <article id="articuloBlog">
+                        <h3>Kata FizzBuzz</h3>
+                        <h5>Ivan, Sep 27, 2020</h5>
+                        <img src="Images/kata fizzbuzz.jpg" alt="" id="img" />
+                        <p>Problema:</p>
+                        <p>Desarrolla un función que reciba un valor entre 0 y 1000000. La función debe devolver "Fizz!" si es un múltiplo de 5, "Buzz!" si es un múltiplo de 3, "FizzBuzz!" si es múltiplo de 3 y 5. En caso de no cumplir con ninguno de los anteriores casos, regresar el número escrito y un "!", ejemplo: "uno!"</p>
+                    </article>
+                </section>
+                <section>
+                    <header id="tituloSeccionBlog">
+                        <h1 style="margin-bottom: 0%;">Recursos</h1>
+                        <h4 style="margin-top: 0%;">Encuentra programas, plug-ins, ejemplos y mas.</h4>
+                    </header>
+                    <article id="articuloBlog">
+                        <h3>Descarga Android Studio 4.0.1</h3>
+                        <h5>Android Studio, Oct 4, 2020</h5>
+                        <img src="Images/android studio.jpg" alt="" id="img" />
+                        <p>Visita el sitio oficial de Android Studio y descarga la nueva versión del IDE.</p>
+                        <p>Descargue las herramientas de Android Studio y SDK hoy. APK Analyzer, Fast Emulator y Code Editor. Obtenga las herramientas más rápidas para crear aplicaciones en todo tipo de dispositivo Android. Emulador rápido. Codifique más rápido que nunca. IDE oficial de Android. Complemento de Android Gradle. Configurar compilaciones.</p>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <footer id="pieBlog">
+        <header id="tituloPieBlog">
+            <h1>Contactanos</h1>
+        </header>
+        <section id="parrafoPieBlog">
+            <article>
+                <header onclick="clickImageVyl()">
+                    <h1>Vyl</h1>
+                </header>
+                <section onclick="clickImageVyl()">
+                    <img src="Images/vyl.jpg" alt="" id="img" />
+                </section>
+                <footer>
+                    <p id="links">Twitter: <a href="https://twitter.com/CcRVyl">CcRVyl</a></p>
+                    <p id="links">Instagram: <a href="https://www.instagram.com/ccr_vyl/">ccr_vyl</a></p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1>Athzi</h1>
+                </header>
+                <section>
+                    <img src="Images/Athzi.jpg" alt="" id="img" />
+                </section>
+                <footer>
+                    <p id="links">Twitter: <a href="https://twitter.com/Athziri80732043">Athziri80732043</a></p>
+                    <p id="links">Instagram: <a href="https://www.instagram.com/d_athziri/">d_athziri</a></p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1>Juaquinz</h1>
+                </header>
+                <section>
+                    <img src="Images/Juaquinz.jpg" alt="" id="img" />
+                </section>
+                <footer>
+                    <p id="links">Twitter: <a href="https://twitter.com/JuaquinzOficial">JuaquinzOficial</a></p>
+                    <p id="links">Instagram: <a href="https://www.instagram.com/eljuaquinz/">eljuaquinz</a></p>
+                </footer>
+            </article>
+        </section>
+    </footer>
+    </body>
 </html>

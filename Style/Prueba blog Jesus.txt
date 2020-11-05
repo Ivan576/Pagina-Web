@@ -86,11 +86,34 @@ body {
 #pieBlog #tituloPieBlog{
     padding: 0;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.397);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
 }
 
-#pieBlog #parrafoPieBlog{
-    text-align: left;
+#pieBlog #parrafoPieBlog {
+    display: flex;
+    margin: 25px;
+}
+
+#pieBlog #parrafoPieBlog article{
+    background-color: rgb(250, 49, 14);
+    padding: 10px;
+}
+
+#pieBlog #parrafoPieBlog article:hover{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+#pieBlog #parrafoPieBlog p{
+    color: white;
+    text-align: justify;
+}
+
+#pieBlog #parrafoPieBlog #links{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 #pieBlog #parrafoPieBlog a{
@@ -113,5 +136,11 @@ body {
     #menuBlog a {
       float: none;
       width: 100%;
+      padding: 0;
+    }
+
+    #pieBlog #parrafoPieBlog {
+        display: inline;
+        margin: 25px;
     }
 }
