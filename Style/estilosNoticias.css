@@ -54,17 +54,19 @@ body {
 #tituloNoticia{
     padding: 5px;
     text-align: center;
-    background: rgb(99, 27, 158);
+    background: rgb(51, 27, 158);
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #noticiaDetalle{
-    background-color: rgba(183, 243, 228, 0.808);
+    background-color: rgba(202, 235, 226, 0.808);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 100px;
     padding-left: 100px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 #links_Noticia{
@@ -127,6 +129,8 @@ body {
 #img{
     width: 100%;
     height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media screen and (max-width: 800px) {
