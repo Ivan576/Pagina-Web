@@ -158,7 +158,7 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    #contenidoBlog, #atajosBlog {   
+    #contenidoBlog, #atajosBlog, #videoStyle {   
       width: 100%;
       padding: 0;
     }
