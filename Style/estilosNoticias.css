@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../Images/Fuji.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial;
+    padding: 10px;
+    padding: 15%;
+    height: 100%;
+    opacity: 90%;
+}
+
+#encabezadoBlog{
+    padding: 30px;
+    text-align: center;
+    background: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+}
+
+#encabezadoBlog #tituloBlog{
+    font-size: 30px;
+}
+
+#menuBlog{
+    overflow: hidden;
+    background-color: rgb(64, 62, 226);
+    margin-bottom: 30px;
+}
+
+#menuBlog a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    align-items: center;
+}
+
+#menuBlog a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#contenidoBlog{
+    float: left;
+    width: 100%;
+}
+
+#tituloNoticia{
+    padding: 5px;
+    text-align: center;
+    background: rgb(99, 27, 158);
+    color: white;
+}
+
+#noticiaDetalle{
+    background-color: rgba(183, 243, 228, 0.808);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+#links_Noticia{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#principalBlog:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#pieBlog{
+    padding: 10px;
+    background: rgb(64, 62, 226);
+    margin-top: 20px;
+    color: white;
+}
+
+#pieBlog #tituloPieBlog{
+    padding: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+}
+
+#pieBlog #parrafoPieBlog {
+    display: flex;
+    margin: 25px;
+}
+
+#pieBlog #parrafoPieBlog article{
+    background-color:rgb(64, 62, 226);
+    padding: 10px;
+}
+
+#pieBlog #parrafoPieBlog article:hover{
+    background-color: rgb(85, 82, 255);
+    padding: 10px;
+}
+
+#pieBlog #parrafoPieBlog p{
+    color: white;
+    text-align: justify;
+}
+
+#pieBlog #parrafoPieBlog #links{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#pieBlog #parrafoPieBlog a{
+    color: white;
+}
+
+#img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    #contenidoBlog, #atajosBlog {   
+      width: 100%;
+      padding: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #menuBlog a {
+      float: none;
+      width: 100%;
+      padding: 0;
+    }
+
+    #pieBlog #parrafoPieBlog {
+        display: inline;
+        margin: 25px;
+    }
+}
