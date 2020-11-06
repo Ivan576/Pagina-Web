@@ -6,6 +6,6 @@ function clickImageAthzi(){
     window.open("https://twitter.com/Athziri80732043", "", "");
 }
 
-function clickImageJuaquinz(){
+function clickImageJoaquinz(){
     window.open("https://twitter.com/JuaquinzOficial", "", "");
 }

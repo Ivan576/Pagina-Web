@@ -50,7 +50,7 @@ body {
 
 #menuLenguajes{
     overflow: hidden;
-    background-color: rgb(64, 62, 226);
+    background-color:rgb(64, 62, 226);
     margin-bottom: 30px;
 }
 
@@ -155,6 +155,8 @@ body {
 #img{
     width: 100%;
     height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media screen and (max-width: 800px) {
@@ -181,7 +183,7 @@ body {
 #tituloTutorial{
     padding: 5px;
     text-align: center;
-    background: rgb(51, 27, 158);
+    background: rgb(64, 62, 226);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
