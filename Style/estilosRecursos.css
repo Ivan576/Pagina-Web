@@ -51,39 +51,53 @@ body {
     width: 100%;
 }
 
-#tituloNoticia{
-    padding: 5px;
-    text-align: center;
-    background: rgb(51, 27, 158);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#contenidoBlog{
+    float: left;
+    width: 75%;
 }
 
-#noticiaDetalle{
-    background-color: rgba(202, 235, 226, 0.808);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 100px;
-    padding-left: 100px;
+#atajosBlog{
+    float: right;
+    width: 25%;
+    background-color: #f1f1f100;
+    padding-left: 20px;
+}
+
+#tituloSeccionBlog{
+    padding: 10px;
+    text-align: left;
+    background: rgb(64, 62, 226);
+    color: white;
+}
+
+#articuloBlog{
+    background-color: rgba(255, 255, 255, 0.808);
+    padding: 20px;
     margin-bottom: 20px;
-    text-align: justify;
-}
-
-#links_Noticia{
-    color: white;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-}
-
-#links_Noticia a{
-    color: black;
 }
 
 #principalBlog:after {
     content: "";
     display: table;
     clear: both;
+}
+
+
+#principalBlog:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#links_Recursos{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#links_Recursos a{
+    color: black;
 }
 
 #pieBlog{
