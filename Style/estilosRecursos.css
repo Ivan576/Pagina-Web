@@ -14,7 +14,6 @@ body {
     opacity: 90%;
 }
 
-
 #encabezadoBlog{
     padding: 30px;
     text-align: center;
@@ -47,36 +46,14 @@ body {
     color: black;
 }
 
-
-#menuLenguajes{
-    overflow: hidden;
-    background-color: rgb(64, 62, 226);
-    margin-bottom: 30px;
-}
-
-#menuLenguajes a {
-    
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    align-items: center;
-}
-
-
-#menuLenguajes a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-#videoStyle{
-    margin-left: -35px;
+#contenidoBlog{
+    float: left;
+    width: 100%;
 }
 
 #contenidoBlog{
     float: left;
-    width: 75%;
+    width: 100%;
 }
 
 #atajosBlog{
@@ -85,7 +62,6 @@ body {
     background-color: #f1f1f100;
     padding-left: 20px;
 }
-
 
 #tituloSeccionBlog{
     padding: 10px;
@@ -96,17 +72,33 @@ body {
 
 #articuloBlog{
     background-color: rgba(255, 255, 255, 0.808);
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
-   
 }
 
 #principalBlog:after {
     content: "";
     display: table;
     clear: both;
+}
 
-  }
+
+#principalBlog:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#links_Recursos{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#links_Recursos a{
+    color: black;
+}
 
 #pieBlog{
     padding: 10px;
@@ -155,10 +147,12 @@ body {
 #img{
     width: 100%;
     height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media screen and (max-width: 800px) {
-    #contenidoBlog, #atajosBlog, #videoStyle {   
+    #contenidoBlog, #atajosBlog {   
       width: 100%;
       padding: 0;
     }
@@ -175,30 +169,4 @@ body {
         display: inline;
         margin: 25px;
     }
-}
-
-
-#tituloTutorial{
-    padding: 5px;
-    text-align: center;
-    background: rgb(51, 27, 158);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#seccionTuto{
-    background-color: rgba(202, 235, 226, 0.808);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-#textoTuto{
-    padding: 0px;
-    text-align: justify;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -76,6 +76,10 @@ body {
     margin: 0px;
 }
 
+#links_Noticia a{
+    color: black;
+}
+
 #principalBlog:after {
     content: "";
     display: table;
