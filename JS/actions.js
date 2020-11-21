@@ -11,19 +11,19 @@ function clickImageJoaquinz(){
 }
 
 function clickTutotiales(){
-    window.open("../html/Tutoriales.html", "_self");
+    window.open("html/Tutoriales.html", "_self");
 }
 
 function clickNoticias(){
-    window.open("../html/Noticias.html", "_self");
+    window.open("html/Noticias.html", "_self");
 }
 
 function clickRecursos(){
-    window.open("../html/Recursos.html", "_self");
+    window.open("html/Recursos.html", "_self");
 }
 
 function clickPreguntas(){
-    window.open("../html/Preguntas.html", "_self");
+    window.open("html/Preguntas.html", "_self");
 }
 
 function addElement () {
