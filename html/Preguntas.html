@@ -9,7 +9,7 @@
         <meta name="description" content="Blog introductorio al mundo de la programación">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../Style/estiloPreguntas.css">
-        <script type="text/javascript" src="/JS/actions.js"></script>
+        <script type="text/javascript" src="../JS/actions.js"></script>
     </head>
     <body>
         <header id="encabezadoBlog">
@@ -46,9 +46,11 @@
                         <h4 style="margin-top: 0%;">¡Nosotros podemos ayudarte a resolverla!</h4>
                     </header>
                     <article id="articuloBlog">
-                        <input type="email" name="correo" id="correo" placeholder="Ingrese un correo o su pregunta será anónima"><br>
-                        <textarea name="pregunta" id="pregunta" rows = "7" cols = "61" name = "description" placeholder="Ingresa tu pregunta..." ></textarea><br>
-                        <div id="enviar"><button type="button" onclick="addElement()">Enviar</button></div>
+                        <form action="../Php/services/guardar.php" method="POST">
+                            <input type="text" name="correo" id="correo" placeholder="Ingrese un correo o su pregunta será anónima"><br>
+                            <textarea name="pregunta" id="pregunta" rows = "7" cols = "61" name = "description" placeholder="Ingresa tu pregunta..." ></textarea><br>
+                            <div id="enviar"><button type="submit" value="Enviar" onclick="return addElement();">Enviar</button></div>
+                        </form>
                     </article>
                 </section>
             </section>
