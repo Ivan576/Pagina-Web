@@ -25,7 +25,7 @@
             <a href="Tutoriales.html">Tutoriales</a>
             <a href="Noticias.html">Noticias</a>
             <a href="Recursos.html">Recursos</a>
-            <a href="Preguntas.html">Preguntas</a>
+            <a href="Preguntas.php">Preguntas</a>
         </nav>
 
         <main id="principalBlog">
@@ -35,7 +35,39 @@
                         <h1 style="margin-bottom: 0%;">Preguntas</h1>
                     </header>
                     <article id="articuloBlog">
-                        
+                    <?php
+                        require_once '../Php/services/seleccionar.php';
+                        $seleccionar = new Seleccionar();
+                        $preguntas = $seleccionar->Selec();
+                        if($preguntas != null) :
+                            foreach ($preguntas as $pregunta): ?>
+                                <h3><?php echo $pregunta['usuario'] ?> preguntó:</h3>
+                                <p><?php echo $pregunta['pregunta'] ?></p>
+                                <?php
+                                    require_once '../Php/services/seleccionar_respuestas.php';
+                                    $seleccionarrespuestas = new SeleccionarRespuestas();
+                                    $respuestas = $seleccionarrespuestas->Selec();
+                                    if($respuestas != null):
+                                        foreach($respuestas as $respuesta):
+                                            if($respuesta['id_pregunta'] === $pregunta['id']):?>
+                                                <h4><?php echo $respuesta['usuario'] ?> respondió:</h3>
+                                                <p><?php echo $respuesta['respuesta'] ?></p>
+                                <?php
+                                            endIf;
+                                        endForeach;
+                                    endif;
+                                ?>
+                                <form action="../Php/services/guardar_respuestas.php" method="POST">
+                                    <input type="text" name="correorespuesta" id="correorespuesta" placeholder="Ingrese un correo o su pregunta será anónima"><br>
+                                    <input type="hidden" name="idpregunta" id="idpregunta" value="<?php echo $pregunta['id'] ?>">
+                                    <textarea name="respuesta" id="respuesta" rows = "7" cols = "61" name = "description" placeholder="Ingresa tu pregunta..." ></textarea><br>
+                                    <div id="enviar"><button type="submit" onclick="return addAnswer();">Enviar</button></div>
+                                </form>
+                                <br></br>
+                    <?php
+                            endForeach;
+                        endif;
+                    ?>
                     </article>
                 </section>
             </section>
@@ -49,7 +81,7 @@
                         <form action="../Php/services/guardar.php" method="POST">
                             <input type="text" name="correo" id="correo" placeholder="Ingrese un correo o su pregunta será anónima"><br>
                             <textarea name="pregunta" id="pregunta" rows = "7" cols = "61" name = "description" placeholder="Ingresa tu pregunta..." ></textarea><br>
-                            <div id="enviar"><button type="submit" value="Enviar" onclick="return addElement();">Enviar</button></div>
+                            <div id="enviar"><button type="submit" onclick="return addElement();">Enviar</button></div>
                         </form>
                     </article>
                 </section>

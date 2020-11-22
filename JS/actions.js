@@ -23,7 +23,7 @@ function clickRecursos(){
 }
 
 function clickPreguntas(){
-    window.open("html/Preguntas.html", "_self");
+    window.open("html/Preguntas.php", "_self");
 }
 
 function addElement () {
@@ -55,6 +55,28 @@ function addElement () {
         currentDiv.appendChild(correo);
         currentDiv.appendChild(pregunta);
         currentDiv.appendChild(salto);
+        return true;
+    }
+}
+
+function addAnswer () {
+    var corr = document.getElementById("correorespuesta").value;
+    var ques = document.getElementById("respuesta").value;
+    if (corr == "" || !(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(corr))) {
+        corr = "Anónimo"
+        if (document.getElementById("correorespuesta").value === "") {
+            document.getElementById("correorespuesta").value = corr;
+        }else {
+            alert('¡Debe ingresar un correo válido o déjelo vacío!');
+            document.getElementById("correorespuesta").value = "";
+            return false;
+        }
+    }
+    if (ques == ""){
+        document.getElementById("respuesta").focus();
+        alert('¡Debe ingresar una respuesta!');
+        return false;
+    } else{
         return true;
     }
 }
