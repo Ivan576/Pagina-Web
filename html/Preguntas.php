@@ -41,7 +41,7 @@
                         $preguntas = $seleccionar->Selec();
                         if($preguntas != null) :
                             foreach ($preguntas as $pregunta): ?>
-                                <h3><?php echo $pregunta['usuario'] ?> preguntó:</h3>
+                                <h3><?php echo $pregunta['id'] ?>- <?php echo $pregunta['usuario'] ?> preguntó:</h3>
                                 <p><?php echo $pregunta['pregunta'] ?></p>
                                 <?php
                                     require_once '../Php/services/seleccionar_respuestas.php';
